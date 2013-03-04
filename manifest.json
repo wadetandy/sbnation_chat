@@ -1,0 +1,13 @@
+{
+    "name": "SBNation Chat",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Chat client for SBNation Comment Threads",
+    "permissions": [
+        "http://*/"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    }
+}

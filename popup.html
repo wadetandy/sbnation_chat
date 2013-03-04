@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/jquery.min.js"></script>
+        <script src="/sbn_chat.js" type="text/javascript"></script>
+        <link href="/sbn_chat.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="SbnChat" ng-csp>
+        <div class="chat-window" ng-controller="ChatCtrl">
+            <input type='text' ng-model='threadId'>
+            <button class="btn btn-primary" ng-click='LoadComments()'>Go</button>
+
+            <div ng-bind-html-unsafe="comments.html">
+            </div>
+        </div>
+    </body>
+</html>
